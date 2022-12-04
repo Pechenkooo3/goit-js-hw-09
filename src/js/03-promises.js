@@ -29,6 +29,6 @@ function onFormSubmit(evt) {
       .catch(({ position, delay }) => {
         console.log(`❌ Rejected promise ${position} in ${delay}ms`);
       });
+    delay += delayStep;
   }
-  delay += delayStep;
 }
